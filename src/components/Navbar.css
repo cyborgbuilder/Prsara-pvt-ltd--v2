@@ -11,15 +11,14 @@ header {
 	justify-content: space-between;
 	height: 70px;
     width: 100%;
-	padding: 0 2rem;
+	padding: 0 1rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
+	border: 1px solid white;
 }
 
-
-
 nav a {
-	margin: 0 1rem;
+	margin-left: 1.8rem;
 	color: var(--textColor);
 	text-decoration: none;
     list-style-type: none;
@@ -42,14 +41,16 @@ header .nav-btn {
 	opacity: 0;
 	font-size: 1.8rem;
 }
-
+span{
+	display: none;
+}
 header div,
 nav {
 	display: flex;
 	align-items: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
 	header .nav-btn {
 		visibility: visible;
 		opacity: 1;
@@ -70,6 +71,13 @@ nav {
 		transition: 1s;
 		transform: translateY(-100vh);
 	}
+
+	span{
+		display: inline;
+	}
+
+
+	
 
 	header .responsive_nav {
 		transform: none;

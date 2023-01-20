@@ -24,9 +24,11 @@ function Navbar() {
 					<FaTimes />
 				</button>
 			</nav>
+			<span>
 			<button className="nav-btn" onClick={showNavbar}>
 				<FaBars />
 			</button>
+			</span>
 			</div>
 		</header>
 	);
